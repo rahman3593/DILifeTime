@@ -26,4 +26,4 @@ Same instance will be used for the entire lifetime of the application.
 Run **dotnet watch** command inside the DILifeTime directory
 
 ### Screens
-![DILifeTime.png](Images%2FDILifeTime.png)
+![DILifeTime.png](DILifeTime%2FImages%2FDILifeTime.png)
