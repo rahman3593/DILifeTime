@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using DILifeTime.Models;
-using DILifeTime.Service.Interface;
+﻿using DILifeTime.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DILifeTime.Controllers;
@@ -38,16 +36,5 @@ public class HomeController : Controller
         ViewBag.singleton1 = _singletonService1.GetRandomId().ToString();
         ViewBag.singleton2 = _singletonService2.GetRandomId().ToString();
         return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
     }
 }
